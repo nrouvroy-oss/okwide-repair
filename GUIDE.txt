@@ -1,0 +1,118 @@
+╔══════════════════════════════════════════════════════════════╗
+║                  GUIDE OKWIDE V2 — COMMENT MODIFIER LE SITE ║
+╚══════════════════════════════════════════════════════════════╝
+
+Le dossier contient 3 éléments :
+
+  📄 index.html    → Structure du site       ← NE PAS TOUCHER
+  📄 contenu.js    → Tout le texte du site   ← À MODIFIER
+  📁 images/       → Dossier pour les photos ← Y DÉPOSER VOS PHOTOS
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✏️  MODIFIER LE TEXTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Ouvrez le fichier "contenu.js"
+   → Clic droit sur le fichier → "Ouvrir avec" → TextEdit (Mac)
+   → Ou utilisez VS Code / Sublime Text pour plus de confort
+
+2. Repérez la section à modifier grâce aux titres (HERO, SERVICES, etc.)
+
+3. Modifiez le texte entre les guillemets "  "
+   ⚠️  Ne supprimez pas les guillemets, virgules ou accolades !
+
+   EXEMPLE — Changer le numéro de téléphone :
+   Avant :  telephone: "+33 (0)X XX XX XX XX",
+   Après :  telephone: "+33 6 12 34 56 78",
+
+4. Enregistrez le fichier (Cmd+S sur Mac)
+
+5. Actualisez la page dans votre navigateur (F5 ou Cmd+R)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  📷  INSÉRER DES PHOTOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Préparez votre photo (redimensionnez si besoin)
+
+2. Renommez-la exactement comme indiqué dans images/LISEZ-MOI.txt
+   Exemple : votre photo d'atelier → renommez-la "atelier.jpg"
+
+3. Glissez-la dans le dossier "images/"
+
+4. Actualisez le navigateur → la photo apparaît automatiquement !
+
+   ✅ Si la photo n'apparaît pas, vérifiez :
+      - Le nom exact du fichier (minuscules, sans accents)
+      - Qu'elle est bien dans le dossier "images/"
+      - Que son format est .jpg, .png ou .webp
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ➕  AJOUTER UN PRODUIT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Dans contenu.js, section "produits:", copiez un bloc existant :
+
+    {
+      badge:       "",
+      categorie:   "Ma catégorie",
+      nom:         "Nom du produit",
+      description: "Description du produit.",
+      prix:        "XXX €",
+    },
+
+Et collez-le avant le dernier ] de la liste.
+N'oubliez pas la virgule à la fin du bloc !
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ➕  AJOUTER UN TÉMOIGNAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Dans contenu.js, section "temoignages:", copiez un bloc :
+
+    {
+      texte:   "Ce que dit le client...",
+      nom:     "Prénom N.",
+      role:    "Son profil — Sa société",
+      etoiles: 5,
+    },
+
+Photo optionnelle : déposez temoignage-5.jpg dans images/
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  🔢  MODIFIER LES CHIFFRES CLÉS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Dans la section "apropos" > "stats", modifiez les "valeur" :
+
+    { valeur: 850,  suffixe: "+", label: "Réparations réalisées"  },
+    { valeur: 7,    suffixe: "",  label: "Ans d'expérience"       },
+    { valeur: 120,  suffixe: "+", label: "Clients professionnels" },
+
+- valeur  = le nombre (sans le +)
+- suffixe = ce qui s'affiche après ("+", " k", "" pour rien)
+- label   = le texte sous le chiffre
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ❓  EN CAS DE PROBLÈME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Le site s'affiche en blanc / vide ?
+→ Une erreur dans contenu.js empêche son chargement
+→ Vérifiez que vous n'avez pas supprimé une virgule ou un guillemet
+→ Comparez avec une ligne qui fonctionne
+
+Vous avez fait une erreur et voulez revenir en arrière ?
+→ Gardez toujours une copie du fichier contenu.js avant de le modifier !
+
+╔══════════════════════════════════════════════════════════════╗
+║  CONSEIL : Ouvrez index.html dans Chrome et gardez l'onglet  ║
+║  ouvert. À chaque modification de contenu.js, appuyez sur   ║
+║  Cmd+R pour voir le résultat immédiatement.                  ║
+╚══════════════════════════════════════════════════════════════╝

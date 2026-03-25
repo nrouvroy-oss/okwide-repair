@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — Maintenance Préventive & Commande | Okwide</title>
+    <meta name="description" content="Toutes les réponses à vos questions sur la maintenance préventive Efoil et les commandes de pièces chez Okwide, spécialiste Efoil dans le Var (83).">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.okwide-repair.fr/faq.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "En quoi consiste la maintenance préventive d'un Efoil ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "La maintenance préventive Okwide comprend 4 étapes : contrôle et serrage de la visserie structurelle, nettoyage et protection des connecteurs électriques, contrôle de l'hélice et graissage des pièces mécaniques, et test complet du moteur sur banc d'essai (puissance, vibrations) avant remise à l'eau." }
+        },
+        {
+          "@type": "Question",
+          "name": "À quelle fréquence faire réviser son Efoil ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nous recommandons une maintenance préventive au moins une fois par an, idéalement en fin de saison. Pour les usages intensifs (bases nautiques, loueurs), une révision tous les 50 à 100h de navigation est conseillée." }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment commander des pièces détachées Efoil chez Okwide ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Utilisez le formulaire de devis sur notre site. Indiquez votre modèle d'Efoil et les pièces souhaitées. Nous vous recontactons sous 24h avec disponibilités et tarifs." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels délais de livraison pour les pièces Efoil ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Les pièces en stock sont expédiées sous 24-48h ouvrées. Pour les commandes spéciales, le délai est de 5 à 10 jours ouvrés. La livraison est possible partout en France et en Europe." }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+        :root {
+            --red: #E63946; --red-dark: #B02030;
+            --black: #0D0D0D; --black-2: #141414; --black-3: #1E1E1E;
+            --white: #F8F8F8; --white-dim: rgba(248,248,248,0.65);
+            --glass: rgba(255,255,255,0.04); --glass-b: rgba(255,255,255,0.09);
+        }
+        html { scroll-behavior:smooth; }
+        body { font-family:'DM Sans',sans-serif; background:var(--black); color:var(--white); overflow-x:hidden; }
+        h1,h2,h3,h4 { font-family:'Bebas Neue',sans-serif; letter-spacing:.04em; }
+
+        /* NAV */
+        nav { position:fixed; top:0; left:0; right:0; z-index:1000; padding:0 5%; height:72px; display:flex; align-items:center; justify-content:space-between; background:rgba(13,13,13,.96); backdrop-filter:blur(24px); border-bottom:1px solid var(--glass-b); }
+        .nav-logo { font-family:'Bebas Neue',sans-serif; font-size:2rem; color:var(--white); text-decoration:none; letter-spacing:.08em; display:flex; align-items:center; gap:10px; }
+        .nav-logo em { color:var(--red); font-style:normal; }
+        .nav-logo img { height:38px; width:auto; display:block; }
+        .nav-back { display:flex; align-items:center; gap:8px; color:var(--white-dim); text-decoration:none; font-size:.85rem; font-weight:500; letter-spacing:.05em; transition:color .2s; }
+        .nav-back:hover { color:var(--red); }
+        .nav-back svg { transition:transform .2s; }
+        .nav-back:hover svg { transform:translateX(-3px); }
+
+        /* HERO */
+        .faq-hero { padding:140px 5% 80px; max-width:1200px; margin:0 auto; }
+        .section-tag { display:inline-block; font-size:.65rem; letter-spacing:.28em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:1.2rem; }
+        .faq-hero h1 { font-size:clamp(3rem,7vw,6rem); line-height:.9; margin-bottom:1.5rem; }
+        .faq-hero h1 span { color:var(--red); }
+        .faq-hero p { font-size:1rem; color:var(--white-dim); max-width:560px; line-height:1.75; font-weight:300; }
+
+        /* TABS */
+        .faq-tabs { padding:0 5%; max-width:1200px; margin:0 auto 3rem; display:flex; gap:.75rem; flex-wrap:wrap; }
+        .tab-btn { background:var(--glass); border:1px solid var(--glass-b); color:var(--white-dim); padding:10px 24px; border-radius:2px; font-family:'DM Sans',sans-serif; font-size:.8rem; font-weight:500; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; transition:all .22s; }
+        .tab-btn.active, .tab-btn:hover { background:rgba(230,57,70,.12); border-color:rgba(230,57,70,.4); color:var(--red); }
+
+        /* CONTENU FAQ */
+        .faq-content { max-width:1200px; margin:0 auto; padding:0 5% 80px; display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
+
+        /* MAINTENANCE — ÉTAPES */
+        .maintenance-steps { display:flex; flex-direction:column; gap:0; }
+        .step { display:flex; gap:1.5rem; padding:2rem 0; border-bottom:1px solid var(--glass-b); position:relative; }
+        .step:first-child { padding-top:0; }
+        .step:last-child { border-bottom:none; }
+        .step-number { font-family:'Bebas Neue',sans-serif; font-size:3.5rem; color:rgba(230,57,70,.15); line-height:1; flex-shrink:0; width:60px; text-align:center; }
+        .step-body h3 { font-size:1.2rem; letter-spacing:.06em; margin-bottom:.6rem; color:var(--white); }
+        .step-body p { font-size:.9rem; color:var(--white-dim); line-height:1.75; font-weight:300; }
+        .step-icon { width:36px; height:36px; background:rgba(230,57,70,.08); border:1px solid rgba(230,57,70,.2); border-radius:4px; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-bottom:.75rem; }
+
+        /* FAQ ACCORDÉON */
+        .faq-panel { display:flex; flex-direction:column; gap:.75rem; }
+        .faq-item { background:var(--black-2); border:1px solid var(--glass-b); border-radius:3px; overflow:hidden; transition:border-color .2s; }
+        .faq-item.open { border-color:rgba(230,57,70,.3); }
+        .faq-q { display:flex; justify-content:space-between; align-items:center; padding:1.25rem 1.5rem; cursor:pointer; gap:1rem; }
+        .faq-q span { font-size:.9rem; font-weight:500; line-height:1.4; }
+        .faq-q svg { flex-shrink:0; transition:transform .25s; color:var(--red); }
+        .faq-item.open .faq-q svg { transform:rotate(45deg); }
+        .faq-a { max-height:0; overflow:hidden; transition:max-height .3s ease; }
+        .faq-item.open .faq-a { max-height:400px; }
+        .faq-a-inner { padding:0 1.5rem 1.25rem; font-size:.88rem; color:var(--white-dim); line-height:1.75; font-weight:300; border-top:1px solid var(--glass-b); padding-top:1rem; }
+
+        /* CTA */
+        .faq-cta { background:var(--black-2); border:1px solid var(--glass-b); border-radius:3px; padding:2.5rem; text-align:center; margin-top:2rem; }
+        .faq-cta h3 { font-size:1.8rem; margin-bottom:.75rem; }
+        .faq-cta h3 span { color:var(--red); }
+        .faq-cta p { color:var(--white-dim); font-size:.9rem; margin-bottom:1.5rem; line-height:1.6; font-weight:300; }
+        .btn-primary { background:var(--red); color:var(--white); padding:14px 30px; border:none; border-radius:2px; font-family:'DM Sans',sans-serif; font-size:.85rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; cursor:pointer; transition:all .22s; display:inline-flex; align-items:center; gap:8px; }
+        .btn-primary:hover { background:var(--red-dark); transform:translateY(-2px); box-shadow:0 8px 32px rgba(230,57,70,.4); }
+
+        /* SECTION LIVRAISON */
+        .livraison-grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(255,255,255,.07); margin-bottom:2rem; }
+        .livraison-card { background:var(--black-2); padding:1.5rem; }
+        .livraison-card h4 { font-size:1rem; letter-spacing:.06em; margin-bottom:.5rem; color:var(--white); }
+        .livraison-card p { font-size:.85rem; color:var(--white-dim); line-height:1.65; font-weight:300; }
+        .livraison-card .tag { display:inline-block; background:rgba(230,57,70,.1); border:1px solid rgba(230,57,70,.25); color:var(--red); font-size:.62rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:3px 10px; border-radius:2px; margin-bottom:.75rem; }
+
+        /* RESPONSIVE */
+        @media(max-width:768px) {
+            .faq-content { grid-template-columns:1fr; gap:3rem; }
+            .livraison-grid { grid-template-columns:1fr; }
+        }
+
+        /* FOOTER MINI */
+        .faq-footer { border-top:1px solid var(--glass-b); padding:2rem 5%; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+        .faq-footer p { font-size:.78rem; color:rgba(255,255,255,.25); }
+        .faq-footer a { color:var(--red); text-decoration:none; font-size:.78rem; }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html" class="nav-logo">
+        <img src="images/Logo Okwide.jpg" alt="Logo Okwide">
+        <span style="letter-spacing:.08em;">OK<em>W</em>IDE</span>
+    </a>
+    <a href="index.html" class="nav-back">
+        <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        Retour au site
+    </a>
+</nav>
+
+<!-- HERO -->
+<div class="faq-hero">
+    <div class="section-tag">Centre d'aide</div>
+    <h1>FAQ<br><span>OKWIDE</span></h1>
+    <p>Tout ce que vous devez savoir sur notre maintenance préventive et nos commandes de pièces.</p>
+</div>
+
+<!-- TABS -->
+<div class="faq-tabs">
+    <button class="tab-btn active" onclick="showTab('maintenance', this)">Maintenance préventive</button>
+    <button class="tab-btn" onclick="showTab('commande', this)">Commande & Livraison</button>
+</div>
+
+<!-- CONTENU -->
+<div class="faq-content">
+
+    <!-- COLONNE GAUCHE : étapes ou livraison -->
+    <div id="col-left">
+
+        <!-- MAINTENANCE -->
+        <div id="tab-maintenance-left">
+            <p class="section-tag">Notre protocole</p>
+            <h2 style="font-size:2rem;margin-bottom:2rem;">LES 4 ÉTAPES<br><span style="color:var(--red);">DE LA RÉVISION</span></h2>
+            <div class="maintenance-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-body">
+                        <div class="step-icon">
+                            <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><circle cx="9" cy="9" r="7" stroke="#E63946" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="#E63946" stroke-width="1.4" stroke-linecap="round"/></svg>
+                        </div>
+                        <h3>Contrôle de la visserie</h3>
+                        <p>Inspection et serrage de l'ensemble de la visserie structurelle. Une étape fondamentale pour une navigation sûre et sans surprise.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-body">
+                        <div class="step-icon">
+                            <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><path d="M3 9h12M9 3v12" stroke="#E63946" stroke-width="1.4" stroke-linecap="round"/></svg>
+                        </div>
+                        <h3>Connecteurs électriques</h3>
+                        <p>Contrôle, nettoyage en profondeur et protection des connecteurs. Prévient les pannes électroniques liées à l'humidité et la corrosion.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-body">
+                        <div class="step-icon">
+                            <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><circle cx="9" cy="9" r="3" stroke="#E63946" stroke-width="1.4"/><path d="M9 2v2M9 14v2M2 9h2M14 9h2" stroke="#E63946" stroke-width="1.4" stroke-linecap="round"/></svg>
+                        </div>
+                        <h3>Hélice & graissage</h3>
+                        <p>Contrôle de l'état de l'hélice, graissage des pièces mécaniques mobiles et vérification des jeux pour un rendement maximal.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-body">
+                        <div class="step-icon">
+                            <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><rect x="2" y="5" width="14" height="8" rx="1.5" stroke="#E63946" stroke-width="1.4"/><path d="M6 9h6M9 7v4" stroke="#E63946" stroke-width="1.4" stroke-linecap="round"/></svg>
+                        </div>
+                        <h3>Test moteur sur banc d'essai</h3>
+                        <p>Test complet — puissance, vibrations — sur banc d'essai dédié avant remise à l'eau. Zéro compromis sur la sécurité.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LIVRAISON -->
+        <div id="tab-commande-left" style="display:none;">
+            <p class="section-tag">Expédition</p>
+            <h2 style="font-size:2rem;margin-bottom:2rem;">DÉLAIS &<br><span style="color:var(--red);">LIVRAISON</span></h2>
+            <div class="livraison-grid">
+                <div class="livraison-card">
+                    <div class="tag">Stock disponible</div>
+                    <h4>Expédition 24–48h</h4>
+                    <p>Les pièces en stock sont préparées et expédiées sous 24 à 48h ouvrées après validation de la commande.</p>
+                </div>
+                <div class="livraison-card">
+                    <div class="tag">Commande spéciale</div>
+                    <h4>5 à 10 jours ouvrés</h4>
+                    <p>Pour les pièces hors stock ou sur commande. Vous êtes informé du délai exact à la confirmation.</p>
+                </div>
+                <div class="livraison-card">
+                    <div class="tag">France & Europe</div>
+                    <h4>Livraison partout</h4>
+                    <p>Nous expédions en France métropolitaine et dans toute l'Europe. Tarifs calculés selon le poids et la destination.</p>
+                </div>
+                <div class="livraison-card">
+                    <div class="tag">Remise en main propre</div>
+                    <h4>Retrait atelier</h4>
+                    <p>Venez récupérer votre commande directement à notre atelier de La Farlède (83). Sur rendez-vous, Lun–Ven 8h30–17h00.</p>
+                </div>
+            </div>
+            <div style="background:rgba(230,57,70,.06);border:1px solid rgba(230,57,70,.2);border-radius:3px;padding:1.25rem 1.5rem;">
+                <p style="font-size:.85rem;color:var(--white-dim);line-height:1.7;">⚠️ <strong style="color:var(--white);">Attention aux contrefaçons</strong> — Okwide utilise exclusivement des pièces d'origine ou certifiées compatibles. Toutes nos pièces sont vérifiées avant expédition.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- COLONNE DROITE : accordéon FAQ -->
+    <div id="col-right">
+
+        <!-- FAQ MAINTENANCE -->
+        <div id="tab-maintenance-right">
+            <p class="section-tag" style="margin-bottom:1.5rem;">Questions fréquentes</p>
+            <div class="faq-panel">
+                <div class="faq-item open">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <span>À quelle fréquence faire réviser son Efoil ?</span>
+                        <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="faq-a"><div class="faq-a-inner">Nous recommandons une maintenance préventive au moins une fois par an, idéalement en fin de saison (hivernage). Pour les usages intensifs — bases nautiques, loueurs — une révision tous les 50 à 100h de navigation est conseillée.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <span>Combien de temps dure une maintenance préventive ?</span>
+                        <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="faq-a"><div class="faq-a-inner">Une révision complète prend généralement 2 à 4 heures selon l'état du matériel. Nous vous communiquons une estimation précise lors de la prise en charge.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <span>La maintenance est-elle valable pour toutes les marques ?</span>
+                        <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="faq-a"><div class="faq-a-inner">Oui. Okwide intervient sur toutes les marques du marché : Takuma, Sifly, Aerofoils, PWR, Jetwave, Fliteboard, Lift, Waydoo et bien d'autres. Notre protocole de révision s'adapte à chaque modèle.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <span>Proposez-vous des contrats de maintenance annuels ?</span>
+                        <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="faq-a"><div class="faq-a-inner">Oui, pour les professionnels (bases nautiques, loueurs, clubs). Nos contrats flotte incluent des révisions planifiées, des tarifs préférentiels et un SLA garanti 48h. Contactez-nous pour un devis personnalisé.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <span>Puis-je apporter mon Efoil directement à l'atelier ?</span>
+                        <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="faq-a"><div class="faq-a-inner">Oui, notre atelier est ouvert du lundi au vendredi de 8h30 à 17h00 au 96 impasse du serpolet, 83210 La Farlède. Nous vous recommandons de prendre rendez-vous par téléphone ou via le formulaire de devis.</div></div>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <h3>PRENDRE <span>RENDEZ-VOUS</span></h3>
+                <p>Déposez votre Efoil à notre atelier ou demandez un devis en ligne. Réponse garantie sous 24h.</p>
+                <a href="https://taap.it/aKLjVcy" target="_blank" class="btn-primary">
+                    <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                    Demander un devis
+                </a>
+            </div>
+        </div>
+
+        <!-- FAQ COMMANDE -->
+        <div id="tab-commande-right" style="display:none;">
+            <p class="section-tag" style="margin-bottom:1.5rem;">Questions fréquentes</p>
+            <div class="faq-panel">
+                <div class="faq-item open">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <span>Comment passer une commande de pièces ?</span>
+                        <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="faq-a"><div class="faq-a-inner">Utilisez le formulaire de devis sur notre site. Indiquez votre modèle d'Efoil et les pièces souhaitées. Nous vous recontactons sous 24h ouvrées avec les disponibilités et tarifs.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <span>Les pièces sont-elles garanties ?</span>
+                        <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="faq-a"><div class="faq-a-inner">Toutes nos pièces d'origine sont garanties 12 mois. Les pièces certifiées compatibles bénéficient d'une garantie de 6 mois. La garantie couvre les défauts de fabrication et de conformité.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <span>Quels sont les moyens de paiement acceptés ?</span>
+                        <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="faq-a"><div class="faq-a-inner">Nous acceptons les virements bancaires, les chèques et les espèces pour les règlements en atelier. Pour les professionnels, la facturation mensuelle consolidée est disponible sur contrat.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <span>Puis-je retourner une pièce si elle ne convient pas ?</span>
+                        <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="faq-a"><div class="faq-a-inner">Les retours sont acceptés sous 14 jours pour les pièces non montées et dans leur emballage d'origine. Contactez-nous au préalable pour obtenir un bon de retour.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <span>Livrez-vous en dehors de la France ?</span>
+                        <svg width="18" height="18" fill="none" viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="faq-a"><div class="faq-a-inner">Oui, nous expédions dans toute l'Europe. Les frais et délais varient selon la destination. Contactez-nous pour un devis de livraison internationale.</div></div>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <h3>COMMANDER <span>UNE PIÈCE</span></h3>
+                <p>Indiquez votre modèle et la pièce souhaitée. Devis gratuit sous 24h.</p>
+                <a href="https://taap.it/aKLjVcy" target="_blank" class="btn-primary">
+                    <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                    Demander un devis
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER MINI -->
+<footer class="faq-footer">
+    <p>© 2025 Okwide — 96 impasse du serpolet, 83210 La Farlède</p>
+    <a href="index.html">← Retour au site</a>
+</footer>
+
+<script>
+function showTab(tab, btn) {
+    // Tabs
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    // Colonnes
+    document.getElementById('tab-maintenance-left').style.display  = tab === 'maintenance' ? '' : 'none';
+    document.getElementById('tab-commande-left').style.display     = tab === 'commande'    ? '' : 'none';
+    document.getElementById('tab-maintenance-right').style.display = tab === 'maintenance' ? '' : 'none';
+    document.getElementById('tab-commande-right').style.display    = tab === 'commande'    ? '' : 'none';
+}
+
+function toggleFaq(el) {
+    const item = el.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+}
+</script>
+
+</body>
+</html>

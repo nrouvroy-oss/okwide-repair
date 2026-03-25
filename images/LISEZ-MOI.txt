@@ -1,0 +1,61 @@
+═══════════════════════════════════════════════
+  DOSSIER PHOTOS — OKWIDE V2
+  Déposez vos photos ici avec les bons noms
+═══════════════════════════════════════════════
+
+PHOTOS PRINCIPALES
+──────────────────
+hero.jpg          → Grande photo en haut du site (Efoil sur l'eau)
+                    Taille recommandée : 1400 x 875 px minimum
+                    Format : paysage (horizontal)
+
+atelier.jpg       → Photo de votre atelier ou votre équipe
+                    Taille recommandée : 800 x 600 px minimum
+                    Format : paysage (horizontal)
+
+
+PHOTOS PRODUITS
+───────────────
+produit-batterie.jpg    → Batterie Efoil
+produit-moteur.jpg      → Moteur brushless
+produit-esc.jpg         → Contrôleur ESC
+produit-kit.jpg         → Kit entretien
+produit-foil.jpg        → Efoil reconditionné
+produit-chargeur.jpg    → Chargeur rapide
+
+Taille recommandée : 600 x 450 px minimum
+Conseil : fond blanc ou gris clair pour un rendu propre
+
+
+PHOTOS TÉMOIGNAGES (optionnel)
+──────────────────────────────
+temoignage-1.jpg   → Photo de Thomas D.
+temoignage-2.jpg   → Photo de Céline M.
+temoignage-3.jpg   → Photo de Marc-Antoine R.
+temoignage-4.jpg   → Photo de Julien K.
+
+Taille recommandée : 200 x 200 px (carré de préférence)
+→ Si pas de photo : un avatar gris s'affiche automatiquement
+
+
+LOGOS CLIENTS PROFESSIONNELS (optionnel)
+─────────────────────────────────────────
+logo-client-1.png   → Logo Base Nautique
+logo-client-2.png   → Logo Loueur Efoil
+logo-client-3.png   → Logo Club Nautique
+logo-client-4.png   → Logo École de Voile
+logo-client-5.png   → Logo Resort Balnéaire
+logo-client-6.png   → Logo Moniteur Pro
+
+Format recommandé : PNG avec fond transparent
+→ Si pas de logo : le nom du client s'affiche automatiquement
+
+
+FORMATS ACCEPTÉS
+────────────────
+.jpg  .jpeg  .png  .webp
+
+═══════════════════════════════════════════════
+Si une photo est manquante, le site affiche
+automatiquement un placeholder stylisé.
+═══════════════════════════════════════════════
