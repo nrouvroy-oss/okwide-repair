@@ -113,7 +113,7 @@ const CONTENU = {
       description: "Pack complet neuf: Télécommande + chargeur.",
       prix:        "299 €",
       photo:       "images/Télécommande.webp",
-      stock:       true,
+      stock:       false,
     },
     {
       badge:       "Top vente",
@@ -122,7 +122,7 @@ const CONTENU = {
       description: "Télécommande seule neuve.",
       prix:        "250 €",
       photo:       "images/remoteonly.webp",
-      stock:       true,
+      stock:       false,
     },
     {
       badge:       "Reconditionné",
