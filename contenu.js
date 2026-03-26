@@ -152,7 +152,7 @@ const CONTENU = {
       "Valable jusqu'au 30 avril",
       "Tous Efoils & engins nautiques électriques",
       "Pièces facturées en supplément si nécessaire",
-      "Places limitées",
+      "A partir de 99€ selon la marque du matériel",
     ],
     // Les 4 étapes de la révision :
     etapes: [

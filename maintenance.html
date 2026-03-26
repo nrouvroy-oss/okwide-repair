@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Préventive Efoil – Okwide | Var (83)</title>
+    <meta name="description" content="Révision annuelle de votre efoil toutes marques. Vérification électronique, batterie, étanchéité. Forfaits personnalisés – Okwide, Var (83).">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.okwide-repair.fr/maintenance.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Okwide">
+    <meta property="og:title" content="Maintenance Préventive Efoil – Okwide | Var (83)">
+    <meta property="og:description" content="Révision annuelle de votre efoil toutes marques. Vérification électronique, batterie, étanchéité. Forfaits personnalisés – Okwide, Var (83).">
+    <meta property="og:url" content="https://www.okwide-repair.fr/maintenance.html">
+    <meta property="og:locale" content="fr_FR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+        :root {
+            --red:#E63946; --red-dark:#B02030;
+            --black:#0A0A0A; --black-2:#141414; --black-3:#1E1E1E;
+            --white:#F5F5F5; --white-dim:rgba(245,245,245,.62);
+            --glass:rgba(255,255,255,.04); --glass-b:rgba(255,255,255,.09);
+        }
+        html { scroll-behavior:smooth; }
+        body { font-family:'DM Sans',sans-serif; background:var(--black); color:var(--white); overflow-x:hidden; }
+        h1,h2,h3 { font-family:'Bebas Neue',sans-serif; letter-spacing:.04em; }
+
+        /* ── REVEAL ── */
+        .reveal { opacity:0; transform:translateY(28px); transition:opacity .55s ease, transform .55s ease; }
+        .reveal.visible { opacity:1; transform:none; }
+
+        /* ── NAV ── */
+        nav { position:fixed; top:0; left:0; right:0; z-index:1000; padding:0 5%; height:72px; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,10,.96); backdrop-filter:blur(24px); border-bottom:1px solid var(--glass-b); }
+        .nav-logo { font-family:'Bebas Neue',sans-serif; font-size:2rem; color:var(--white); text-decoration:none; letter-spacing:.08em; display:flex; align-items:center; gap:10px; }
+        .nav-logo em { color:var(--red); font-style:normal; }
+        .nav-logo img { height:38px; width:auto; display:block; }
+        .nav-links { display:flex; list-style:none; gap:2.5rem; align-items:center; }
+        .nav-links a { color:var(--white-dim); text-decoration:none; font-size:.78rem; font-weight:500; letter-spacing:.12em; text-transform:uppercase; transition:color .2s; position:relative; }
+        .nav-links a::after { content:''; position:absolute; bottom:-4px; left:0; width:0; height:2px; background:var(--red); transition:width .3s; }
+        .nav-links a:hover { color:var(--white); }
+        .nav-links a:hover::after { width:100%; }
+        .nav-links a.active { color:var(--white); }
+        .nav-links a.active::after { width:100%; }
+        .nav-cta { background:var(--red)!important; color:var(--white)!important; padding:9px 22px; border-radius:2px; }
+        .nav-cta::after { display:none!important; }
+        .nav-cta:hover { background:var(--red-dark)!important; }
+        .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:5px; }
+        .hamburger span { display:block; width:26px; height:2px; background:var(--white); transition:all .3s; }
+        .mob-nav { position:fixed; inset:0; background:rgba(10,10,10,.98); z-index:999; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2.5rem; transform:translateX(100%); transition:transform .4s ease; }
+        .mob-nav.open { transform:translateX(0); }
+        .mob-nav a { font-family:'Bebas Neue',sans-serif; font-size:3.5rem; color:var(--white); text-decoration:none; letter-spacing:.05em; transition:color .2s; }
+        .mob-nav a:hover { color:var(--red); }
+        .mob-close { position:absolute; top:24px; right:5%; background:none; border:none; color:var(--white); font-size:2rem; cursor:pointer; }
+
+        /* ── SHARED ── */
+        .section-tag { font-size:.65rem; letter-spacing:.28em; text-transform:uppercase; color:var(--red); font-weight:600; display:flex; align-items:center; gap:14px; margin-bottom:1rem; }
+        .section-tag::before { content:''; width:32px; height:2px; background:var(--red); flex-shrink:0; }
+        .section-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(2.6rem,4.5vw,4rem); line-height:.95; margin-bottom:1rem; }
+        .section-title .acc { color:var(--red); }
+        .section-sub { color:var(--white-dim); font-size:clamp(.88rem,1.4vw,1rem); line-height:1.75; font-weight:300; max-width:620px; }
+        .btn-primary { display:inline-flex; align-items:center; gap:8px; background:var(--red); color:var(--white); padding:14px 30px; border:none; border-radius:2px; font-family:'DM Sans',sans-serif; font-size:.84rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; cursor:pointer; transition:all .22s; }
+        .btn-primary:hover { background:var(--red-dark); transform:translateY(-2px); box-shadow:0 8px 32px rgba(230,57,70,.4); }
+        .btn-outline { display:inline-flex; align-items:center; gap:8px; background:transparent; color:var(--white); padding:10px 22px; border:1px solid rgba(255,255,255,.22); border-radius:2px; font-family:'DM Sans',sans-serif; font-size:.78rem; font-weight:500; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; cursor:pointer; transition:all .22s; }
+        .btn-outline:hover { border-color:var(--red); color:var(--red); }
+
+        /* ── HERO ── */
+        #hero {
+            position:relative; min-height:88vh; display:flex; align-items:center;
+            padding:140px 5% 100px;
+            overflow:hidden;
+        }
+        .hero-inner { display:grid; grid-template-columns:1fr auto; gap:4rem; align-items:center; width:100%; position:relative; z-index:2; }
+        /* Carte prix hero */
+        .hero-price-card {
+            background:var(--black-2);
+            border:1px solid rgba(230,57,70,.35);
+            border-radius:4px;
+            padding:2rem 1.75rem;
+            text-align:center;
+            min-width:240px;
+            max-width:280px;
+            flex-shrink:0;
+        }
+        .price-tag-small { font-size:.6rem; letter-spacing:.25em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:1rem; }
+        .price-from { font-size:.72rem; color:var(--white-dim); font-weight:300; margin-bottom:.1rem; }
+        .price-main { font-family:'Bebas Neue',sans-serif; font-size:5.5rem; color:var(--red); line-height:1; }
+        .price-sub { font-size:.82rem; color:var(--white-dim); margin-bottom:.25rem; }
+        .price-crossed { font-size:.8rem; text-decoration:line-through; color:rgba(255,255,255,.22); margin-bottom:1.5rem; }
+        .hero-price-card .btn-primary { width:100%; justify-content:center; font-size:.76rem; padding:12px 16px; margin-bottom:1.25rem; }
+        .price-conditions { display:flex; flex-direction:column; gap:.55rem; text-align:left; }
+        .price-cond-item { display:flex; align-items:flex-start; gap:.6rem; font-size:.76rem; color:var(--white-dim); line-height:1.4; font-weight:300; }
+        .price-cond-item svg { flex-shrink:0; margin-top:1px; }
+        .hero-bg {
+            position:absolute; inset:0;
+            background:radial-gradient(ellipse at 60% 40%, rgba(230,57,70,.15) 0%, transparent 55%),
+                        linear-gradient(135deg,#0A0A0A 0%,#160808 55%,#0A0A0A 100%);
+        }
+        .hero-grid {
+            position:absolute; inset:0;
+            background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),
+                             linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);
+            background-size:64px 64px;
+        }
+        .hero-slash { position:absolute; left:48%; top:0; bottom:0; width:2px; background:linear-gradient(to bottom,transparent,var(--red) 35%,var(--red) 65%,transparent); opacity:.45; }
+        .hero-content { position:relative; z-index:2; max-width:700px; }
+        .hero-badge { display:inline-flex; align-items:center; gap:8px; background:linear-gradient(135deg,rgba(230,57,70,.18),rgba(230,57,70,.06)); border:1px solid rgba(230,57,70,.5); padding:6px 14px 6px 10px; border-radius:50px; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--white); margin-bottom:1.25rem; font-weight:500; }
+        .hero-badge::before { content:''; width:7px; height:7px; border-radius:50%; background:var(--red); box-shadow:0 0 6px var(--red); animation:blink 2s infinite; flex-shrink:0; }
+        @keyframes blink { 0%,100%{opacity:1}50%{opacity:.3} }
+        .hero-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(3.8rem,7vw,6.5rem); line-height:.9; margin-bottom:1.5rem; }
+        .hero-sub { color:var(--white-dim); font-size:clamp(.9rem,1.5vw,1.05rem); line-height:1.8; max-width:520px; margin-bottom:2.5rem; font-weight:300; }
+
+        /* ── SECTION POURQUOI ── */
+        #pourquoi { padding:110px 5%; }
+        .why-header { max-width:640px; margin-bottom:3.5rem; }
+        .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+        .why-card {
+            background:var(--black-2); border:1px solid var(--glass-b);
+            border-radius:4px; padding:2.25rem 2rem;
+            transition:border-color .25s, transform .25s;
+        }
+        .why-card:hover { border-color:rgba(230,57,70,.35); transform:translateY(-4px); }
+        .why-icon { width:48px; height:48px; background:rgba(230,57,70,.1); border:1px solid rgba(230,57,70,.25); border-radius:3px; display:flex; align-items:center; justify-content:center; margin-bottom:1.25rem; }
+        .why-card h3 { font-family:'DM Sans',sans-serif; font-size:1rem; font-weight:600; margin-bottom:.75rem; }
+        .why-card p { color:var(--white-dim); font-size:.875rem; line-height:1.8; font-weight:300; }
+
+        /* ── SECTION CE QUI EST INCLUS ── */
+        #inclus { padding:110px 5%; background:var(--black-2); }
+        .inclus-inner { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; max-width:1100px; margin:0 auto; }
+        .inclus-list { list-style:none; display:flex; flex-direction:column; gap:1rem; margin:1.75rem 0 2rem; }
+        .inclus-list li { display:flex; align-items:flex-start; gap:1rem; color:var(--white-dim); font-size:.92rem; line-height:1.6; font-weight:300; }
+        .check { width:22px; height:22px; flex-shrink:0; background:rgba(230,57,70,.12); border:1px solid rgba(230,57,70,.4); border-radius:50%; display:flex; align-items:center; justify-content:center; margin-top:1px; }
+        .marques-badge { display:inline-block; background:var(--red); color:#fff; font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; padding:8px 16px; border-radius:2px; }
+        /* Photo placeholder */
+        .atelier-photo { position:relative; aspect-ratio:4/5; border-radius:6px; overflow:hidden; }
+        .atelier-photo img { width:100%; height:100%; object-fit:cover; display:block; position:relative; z-index:1; }
+        .atelier-photo img.error { display:none; }
+        .atelier-photo img:not(.error) + .ph-box { display:none; }
+        .ph-box { position:absolute; inset:0; background:var(--black-3); border:1px solid var(--glass-b); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; }
+        .ph-box::before { content:''; position:absolute; inset:0; background:repeating-linear-gradient(-45deg,transparent,transparent 22px,rgba(255,255,255,.015) 22px,rgba(255,255,255,.015) 23px); }
+        .ph-label { position:relative; z-index:1; font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,.3); font-weight:500; }
+
+        /* ── SECTION GALERIE ── */
+        #galerie { padding:110px 5%; }
+        .galerie-header { text-align:center; margin-bottom:3rem; }
+        .galerie-header .section-tag { justify-content:center; }
+        .galerie-header .section-tag::before { display:none; }
+        .galerie-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; max-width:900px; margin:0 auto; }
+        .galerie-item { position:relative; aspect-ratio:1/1; border-radius:8px; overflow:hidden; cursor:pointer; }
+        .galerie-item img { width:100%; height:100%; object-fit:cover; display:block; position:relative; z-index:1; transition:transform .4s ease; }
+        .galerie-item img.error { display:none; }
+        .galerie-item img:not(.error) + .gal-ph { display:none; }
+        .gal-ph { position:absolute; inset:0; background:var(--black-3); border:1px solid var(--glass-b); display:flex; align-items:center; justify-content:center; }
+        .gal-ph::before { content:''; position:absolute; inset:0; background:repeating-linear-gradient(-45deg,transparent,transparent 22px,rgba(255,255,255,.015) 22px,rgba(255,255,255,.015) 23px); }
+        .gal-overlay { position:absolute; inset:0; background:rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity .3s; z-index:2; }
+        .gal-overlay span { color:#fff; font-family:'DM Sans',sans-serif; font-size:.82rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; text-align:center; padding:0 1rem; }
+        .galerie-item:hover .gal-overlay { opacity:1; }
+        .galerie-item:hover img { transform:scale(1.04); }
+        .gal-ph-label { position:relative; z-index:1; font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,.3); }
+
+        /* ── SECTION FORFAITS ── */
+        #forfaits { padding:110px 5%; background:var(--black-2); }
+        .forfaits-header { text-align:center; max-width:620px; margin:0 auto 3.5rem; }
+        .forfaits-header .section-tag { justify-content:center; }
+        .forfaits-header .section-tag::before { display:none; }
+        .forfaits-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; max-width:1100px; margin:0 auto 3rem; background:var(--glass-b); border:1px solid var(--glass-b); border-radius:6px; overflow:hidden; }
+        .forfait-card {
+            background:var(--black-2);
+            padding:2.25rem 1.75rem;
+            display:flex; flex-direction:column; align-items:center; text-align:center; gap:.75rem;
+            transition:background .22s;
+        }
+        .forfait-card:hover { background:var(--black-3); }
+        .forfait-logo-wrap { height:64px; width:130px; background:#fff; border-radius:4px; display:flex; align-items:center; justify-content:center; padding:8px 12px; opacity:.8; transition:opacity .2s; }
+        .forfait-logo-wrap img { max-height:44px; max-width:106px; width:auto; object-fit:contain; display:block; }
+        .forfait-card:hover .forfait-logo-wrap { opacity:1; }
+        .forfait-logo-text { font-family:'Bebas Neue',sans-serif; font-size:1.5rem; color:var(--white); letter-spacing:.08em; opacity:.7; }
+        .forfait-card:hover .forfait-logo-text { opacity:1; }
+        .forfait-card h3 { font-family:'DM Sans',sans-serif; font-size:.88rem; font-weight:500; color:var(--white-dim); letter-spacing:.05em; text-transform:uppercase; }
+        .forfait-card .sub { color:rgba(245,245,245,.35); font-size:.75rem; font-weight:300; }
+
+        /* ── CTA FINAL ── */
+        #cta-final { background:var(--red); padding:100px 5%; text-align:center; position:relative; overflow:hidden; }
+        #cta-final::before { content:''; position:absolute; inset:0; background:repeating-linear-gradient(-45deg,transparent,transparent 22px,rgba(255,255,255,.04) 22px,rgba(255,255,255,.04) 23px); pointer-events:none; }
+        #cta-final h2 { font-size:clamp(2.5rem,5vw,4.2rem); color:#fff; margin-bottom:.75rem; position:relative; }
+        #cta-final p { color:rgba(255,255,255,.8); font-size:1rem; margin-bottom:2.5rem; font-weight:300; position:relative; }
+        .btn-white { display:inline-flex; align-items:center; gap:10px; background:#fff; color:var(--red); font-family:'DM Sans',sans-serif; font-weight:600; font-size:.84rem; letter-spacing:.1em; text-transform:uppercase; text-decoration:none; padding:14px 32px; border-radius:2px; transition:opacity .2s; position:relative; }
+        .btn-white:hover { opacity:.88; }
+
+        /* ── FOOTER ── */
+        footer { background:var(--black-2); border-top:1px solid var(--glass-b); padding:2.5rem 5%; text-align:center; }
+        footer p { color:rgba(255,255,255,.28); font-size:.78rem; margin-bottom:1rem; }
+        .footer-links { display:flex; flex-wrap:wrap; justify-content:center; gap:.5rem 1.5rem; }
+        .footer-links a { color:rgba(255,255,255,.35); font-size:.75rem; text-decoration:none; transition:color .2s; }
+        .footer-links a:hover { color:var(--white); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width:900px) {
+            .hero-inner { grid-template-columns:1fr; }
+            .hero-price-card { max-width:100%; min-width:unset; }
+
+            .why-grid { grid-template-columns:1fr 1fr; }
+            .forfaits-grid { grid-template-columns:1fr 1fr; }
+        }
+        @media (max-width:640px) {
+            .nav-links { display:none; }
+            .hamburger { display:flex; }
+            .inclus-inner { grid-template-columns:1fr; gap:2.5rem; }
+            .why-grid { grid-template-columns:1fr; }
+            .forfaits-grid { grid-template-columns:1fr 1fr; }
+            #hero { min-height:auto; padding:120px 5% 80px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav">
+    <button class="mob-close" onclick="toggleNav()">✕</button>
+    <a href="index.html" onclick="toggleNav()">Accueil</a>
+    <a href="index.html#services" onclick="toggleNav()">Services</a>
+    <a href="maintenance.html" onclick="toggleNav()">Maintenance</a>
+    <a href="index.html#produits" onclick="toggleNav()">Produits</a>
+    <a href="faq.html" onclick="toggleNav()">FAQ</a>
+    <a href="index.html#contact" onclick="toggleNav()">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html" class="nav-logo">
+        <img src="images/Logo Okwide.jpg" alt="Logo Okwide">
+        <span>OK<em>W</em>IDE</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="maintenance.html" class="active">Maintenance</a></li>
+        <li><a href="index.html#produits">Produits</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="https://taap.it/uVo0m3H" target="_blank" class="nav-cta">Devis Gratuit</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-slash"></div>
+    <div class="hero-inner">
+        <div class="hero-content reveal">
+            <div class="hero-badge">Maintenance Préventive</div>
+            <h1 class="hero-title">Protégez votre<br>investissement</h1>
+            <p class="hero-sub">Un efoil représente plusieurs milliers d'euros. Une révision annuelle, c'est la garantie de rider en toute sécurité et de préserver la durée de vie de votre matériel.</p>
+            <a href="https://forms.fillout.com/t/hVAQLjz5AJus" target="_blank" class="btn-primary">
+                <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><rect x="2" y="4" width="12" height="9" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M2 5l6 4.5L14 5" stroke="currentColor" stroke-width="1.4"/></svg>
+                Demander un devis maintenance
+            </a>
+        </div>
+
+        <!-- Carte prix -->
+        <div class="hero-price-card reveal" style="transition-delay:.15s">
+            <div class="price-tag-small">Maintenance préventive</div>
+            <div class="price-from">À partir de</div>
+            <div class="price-main">99€</div>
+            <div class="price-sub">TTC · Révision complète</div>
+            <div class="price-crossed">Au lieu de 150€</div>
+            <a href="https://forms.fillout.com/t/hVAQLjz5AJus" target="_blank" class="btn-primary">
+                <svg width="14" height="14" fill="none" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Réserver ma révision
+            </a>
+            <div class="price-conditions">
+                <div class="price-cond-item">
+                    <svg width="13" height="13" fill="none" viewBox="0 0 13 13"><path d="M2 6.5l3 3 6-6" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Valable jusqu'au 30 avril
+                </div>
+                <div class="price-cond-item">
+                    <svg width="13" height="13" fill="none" viewBox="0 0 13 13"><path d="M2 6.5l3 3 6-6" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Tous Efoils & engins nautiques électriques
+                </div>
+                <div class="price-cond-item">
+                    <svg width="13" height="13" fill="none" viewBox="0 0 13 13"><path d="M2 6.5l3 3 6-6" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Pièces facturées en supplément si nécessaire
+                </div>
+                <div class="price-cond-item">
+                    <svg width="13" height="13" fill="none" viewBox="0 0 13 13"><path d="M2 6.5l3 3 6-6" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Places limitées
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ POURQUOI ═══ -->
+<section id="pourquoi">
+    <div class="why-header reveal">
+        <div class="section-tag">Prévention</div>
+        <h2 class="section-title">Pourquoi réviser son efoil<br><span class="acc">chaque année ?</span></h2>
+        <p class="section-sub">L'eau salée, les chocs et l'usure naturelle dégradent silencieusement vos équipements. Ne découvrez pas les problèmes au mauvais moment.</p>
+    </div>
+    <div class="why-grid">
+        <div class="why-card reveal" style="transition-delay:.05s">
+            <div class="why-icon">
+                <svg width="22" height="22" fill="none" viewBox="0 0 22 22"><path d="M11 2L4 5.5v5c0 4.5 3 8.4 7 9.5 4-1.1 7-5 7-9.5v-5L11 2z" stroke="#E63946" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 11l2 2 4-4" stroke="#E63946" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Sécurité avant tout</h3>
+            <p>Des roulements ou des joints d'étanchéité usés peuvent provoquer une panne en pleine mer. La révision détecte les risques avant qu'ils deviennent dangereux.</p>
+        </div>
+        <div class="why-card reveal" style="transition-delay:.1s">
+            <div class="why-icon">
+                <svg width="22" height="22" fill="none" viewBox="0 0 22 22"><path d="M11 2L7 12h4l-2 8 8-10h-4l2-8z" stroke="#E63946" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Performances préservées</h3>
+            <p>Une connexion oxydée, un réducteur non graissé ou une hélice mal équilibrée réduisent l'autonomie et la puissance. La révision permet de garder les performances d'origine.</p>
+        </div>
+        <div class="why-card reveal" style="transition-delay:.15s">
+            <div class="why-icon">
+                <svg width="22" height="22" fill="none" viewBox="0 0 22 22"><circle cx="11" cy="11" r="8" stroke="#E63946" stroke-width="1.6"/><path d="M11 7v4l3 2" stroke="#E63946" stroke-width="1.6" stroke-linecap="round"/><path d="M7 4.5C5.2 5.9 4 8.1 4 10.6" stroke="#E63946" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Économies à long terme</h3>
+            <p>Prévenir coûte toujours moins cher que guérir. Une révision annuelle évite les pannes graves et prolonge la durée de vie de votre matériel.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ CE QUI EST INCLUS ═══ -->
+<section id="inclus">
+    <div class="inclus-inner">
+        <div class="reveal">
+            <div class="section-tag">Révision complète</div>
+            <h2 class="section-title">Ce que comprend<br><span class="acc">notre révision</span></h2>
+            <p class="section-sub">Un contrôle complet réalisé par nos techniciens</p>
+            <ul class="inclus-list">
+                <li>
+                    <div class="check"><svg width="11" height="11" fill="none" viewBox="0 0 11 11"><path d="M2 5.5l2.5 2.5L9 3" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <span>Vérification complète de l'électronique (ESC, connecteurs)</span>
+                </li>
+                <li>
+                    <div class="check"><svg width="11" height="11" fill="none" viewBox="0 0 11 11"><path d="M2 5.5l2.5 2.5L9 3" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <span>Graissage des pièces mécaniques</span>
+                </li>
+                <li>
+                    <div class="check"><svg width="11" height="11" fill="none" viewBox="0 0 11 11"><path d="M2 5.5l2.5 2.5L9 3" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <span>Vérification et remplacement des joints d'étanchéité</span>
+                </li>
+                <li>
+                    <div class="check"><svg width="11" height="11" fill="none" viewBox="0 0 11 11"><path d="M2 5.5l2.5 2.5L9 3" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <span>Remplacement des pièces d'usure si nécessaire</span>
+                </li>
+                <li>
+                    <div class="check"><svg width="11" height="11" fill="none" viewBox="0 0 11 11"><path d="M2 5.5l2.5 2.5L9 3" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <span>Nettoyage des connexions électriques</span>
+                </li>
+            </ul>
+            <div class="marques-badge">Toutes marques — Takuma, Aerofoils, Lift, PWR, Sifly et autres</div>
+        </div>
+        <div class="atelier-photo reveal" style="transition-delay:.1s">
+            <img src="images/maintenance-atelier.webp" alt="Technicien Okwide en atelier" onerror="this.classList.add('error')">
+            <div class="ph-box">
+                <svg width="36" height="36" fill="none" viewBox="0 0 36 36"><path d="M18 8C12.5 8 8 12.5 8 18s4.5 10 10 10 10-4.5 10-10S23.5 8 18 8z" stroke="rgba(230,57,70,.4)" stroke-width="1.5"/><path d="M14 18h8M18 14v8" stroke="rgba(230,57,70,.5)" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <span class="ph-label">Photo technicien atelier</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ GALERIE ═══ -->
+<section id="galerie">
+    <div class="galerie-header reveal">
+        <div class="section-tag">Atelier</div>
+        <h2 class="section-title">Notre atelier <span class="acc">en action</span></h2>
+    </div>
+    <div class="galerie-grid reveal" style="transition-delay:.1s">
+
+        <div class="galerie-item">
+            <img src="images/maintenance-1.webp" alt="Vérification électronique efoil" loading="lazy" onerror="this.classList.add('error')">
+            <div class="gal-ph"></div>
+        </div>
+
+        <div class="galerie-item">
+            <img src="images/maintenance-2.webp" alt="Contrôle batterie efoil" loading="lazy" onerror="this.classList.add('error')">
+            <div class="gal-ph"></div>
+        </div>
+
+        <div class="galerie-item">
+            <img src="images/maintenance-3.webp" alt="Graissage et étanchéité efoil" loading="lazy" onerror="this.classList.add('error')">
+            <div class="gal-ph"></div>
+        </div>
+
+        <div class="galerie-item">
+            <img src="images/maintenance-4.webp" alt="Rapport d'état efoil" loading="lazy" onerror="this.classList.add('error')">
+            <div class="gal-ph"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ═══ FORFAITS ═══ -->
+<section id="forfaits">
+    <div class="forfaits-header reveal">
+        <div class="section-tag">Marques & Tarifs</div>
+        <h2 class="section-title">Des forfaits adaptés<br><span class="acc">à chaque marque</span></h2>
+        <p class="section-sub" style="margin:0 auto;">Chaque marque a ses spécificités techniques. Nous proposons des forfaits de révision adaptés à votre matériel.</p>
+    </div>
+    <div class="forfaits-grid reveal">
+
+        <div class="forfait-card">
+            <div class="forfait-logo-wrap"><img src="images/takuma.webp" alt="Takuma"></div>
+            <h3>Takuma</h3>
+        </div>
+
+        <div class="forfait-card">
+            <div class="forfait-logo-wrap"><img src="images/aerofoils.jpeg" alt="Aerofoils"></div>
+            <h3>Aerofoils</h3>
+        </div>
+
+        <div class="forfait-card">
+            <div class="forfait-logo-wrap"><img src="images/sifly.webp" alt="Sifly"></div>
+            <h3>Sifly</h3>
+        </div>
+
+        <div class="forfait-card">
+            <div class="forfait-logo-wrap"><img src="images/duotone.jpeg" alt="Duotone"></div>
+            <h3>Duotone</h3>
+            <p class="sub">Foil Assist</p>
+        </div>
+
+        <div class="forfait-card">
+            <div class="forfait-logo-wrap"><img src="images/PWR.png" alt="PWR"></div>
+            <h3>PWR</h3>
+        </div>
+
+        <div class="forfait-card" style="background:rgba(230,57,70,.04);">
+            <div class="forfait-logo-wrap"><span class="forfait-logo-text" style="font-size:2rem;opacity:.4;">+</span></div>
+            <h3>Autre marque</h3>
+            <p class="sub">Toutes marques acceptées</p>
+        </div>
+
+    </div>
+    <div style="text-align:center;" class="reveal" style="transition-delay:.2s">
+        <a href="https://forms.fillout.com/t/hVAQLjz5AJus" target="_blank" class="btn-primary">
+            <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><rect x="2" y="4" width="12" height="9" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M2 5l6 4.5L14 5" stroke="currentColor" stroke-width="1.4"/></svg>
+            Demander un tarif pour mon matériel
+        </a>
+    </div>
+</section>
+
+<!-- ═══ CTA FINAL ═══ -->
+<section id="cta-final">
+    <h2 class="reveal">Prêt à faire réviser<br>votre matériel ?</h2>
+    <p class="reveal" style="transition-delay:.08s">Répondez en 2 minutes. Nous vous rappelons sous 24h avec un tarif personnalisé.</p>
+    <a href="https://forms.fillout.com/t/hVAQLjz5AJus" target="_blank" class="btn-white reveal" style="transition-delay:.15s">
+        <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Demander un devis maintenance
+    </a>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+    <p>© 2026 I.E.T. – Okwide. Tous droits réservés.</p>
+    <div class="footer-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="cgv.html">CGV</a>
+        <a href="cgps.html">CGPS</a>
+        <a href="cookies.html">Cookies</a>
+    </div>
+</footer>
+
+<!-- ══ BANDEAU COOKIES ══ -->
+<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--black-2);border-top:2px solid var(--red);padding:1.25rem 5%;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+    <p style="color:var(--white-dim);font-size:.84rem;line-height:1.6;max-width:780px;margin:0;">
+        Nous utilisons des cookies techniques nécessaires au fonctionnement du site et au paiement sécurisé. Pas de tracking publicitaire.
+        <a href="cookies.html" style="color:var(--red);text-decoration:none;margin-left:.5rem;">En savoir plus</a>
+    </p>
+    <button onclick="acceptCookies()" style="background:var(--red);color:#fff;border:none;padding:10px 24px;border-radius:2px;font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;white-space:nowrap;flex-shrink:0;">Accepter</button>
+</div>
+
+<script>
+    // Mobile nav
+    function toggleNav() {
+        document.getElementById('mobNav').classList.toggle('open');
+    }
+
+    // Reveal au scroll
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Cookies
+    function acceptCookies() {
+        localStorage.setItem('okwide_cookies', '1');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+    if (!localStorage.getItem('okwide_cookies')) {
+        document.getElementById('cookie-banner').style.display = 'flex';
+    }
+</script>
+
+</body>
+</html>
