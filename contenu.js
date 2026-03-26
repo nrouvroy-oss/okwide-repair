@@ -67,7 +67,7 @@ const CONTENU = {
     stats: [
       { valeur: 300,  suffixe: "+", label: "Réparations réalisées"  },
       { valeur: 5,    suffixe: "",  label: "Ans d'expérience"       },
-      { valeur: 50,   suffixe: "+", label: "Clients professionnels" },
+      { valeur: 100,   suffixe: "+", label: "Clients particuliers et professionnels" },
     ],
     // 📷 Photo atelier : déposez votre fichier sous le nom images/atelier.webp
   },
