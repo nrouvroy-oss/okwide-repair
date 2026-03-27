@@ -150,6 +150,8 @@
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="/images/hero.webp" fetchpriority="high">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 
     <!-- ⚠️ NE PAS MODIFIER CE FICHIER — Éditez contenu.js uniquement -->
@@ -445,7 +447,7 @@
     <div class="hero-diag"></div>
     <div class="hero-slash"></div>
     <div class="hero-photo">
-        <img src="images/hero.webp" alt="Efoil en action" onerror="this.classList.add('error')">
+        <img src="images/hero.webp" alt="Efoil en action" fetchpriority="high" loading="eager" onerror="this.classList.add('error')">
         <div class="ph-box">
             <div class="ph-icon">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
@@ -626,7 +628,7 @@
 </footer>
 
 <!-- ═══════ CHARGEMENT DU CONTENU ═══════ -->
-<script src="contenu.js"></script>
+<script src="contenu.js" defer></script>
 <script>
 // ─────────────────────────────────────────────
 // ICÔNES SERVICES (une par service, dans l'ordre)
