@@ -62,12 +62,15 @@
         :root {
             --red: #E63946; --red-dark: #B02030;
             --black: #0A0A0A; --black-2: #141414; --black-3: #1E1E1E;
-            --white: #F5F5F5; --white-dim: rgba(245,245,245,0.62);
+            --white: #F5F5F5; --white-dim: rgba(245,245,245,0.78);
             --glass: rgba(255,255,255,0.04); --glass-b: rgba(255,255,255,0.09);
         }
         html { scroll-behavior: smooth; }
         body { font-family: 'DM Sans', sans-serif; background: var(--black); color: var(--white); overflow-x: hidden; }
         h1,h2,h3 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.04em; }
+
+        .skip-link { position:absolute; top:-100%; left:50%; transform:translateX(-50%); background:var(--red); color:var(--white); padding:12px 24px; z-index:10000; border-radius:0 0 4px 4px; font-size:.85rem; text-decoration:none; font-weight:600; }
+        .skip-link:focus { top:0; }
 
         /* ── NAV ── */
         nav { position: fixed; top:0; left:0; right:0; z-index:1000; padding:0 5%; height:72px; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,10,.96); backdrop-filter:blur(24px); border-bottom:1px solid var(--glass-b); }
@@ -265,8 +268,8 @@
             text-align: center;
         }
         footer p {
-            color: rgba(255,255,255,.28);
-            font-size: .78rem;
+            color: rgba(255,255,255,.40);
+            font-size: .82rem;
             margin-bottom: 1rem;
         }
         .footer-links {
@@ -276,8 +279,8 @@
             gap: .5rem 1.5rem;
         }
         .footer-links a {
-            color: rgba(255,255,255,.35);
-            font-size: .75rem;
+            color: rgba(255,255,255,.50);
+            font-size: .78rem;
             text-decoration: none;
             transition: color .2s;
         }
@@ -293,6 +296,7 @@
     </style>
 </head>
 <body>
+<a href="#faq-hero" class="skip-link">Aller au contenu principal</a>
 
 <!-- MOBILE NAV -->
 <div class="mob-nav" id="mobNav">
@@ -316,9 +320,9 @@
         <li><a href="/#services">Services</a></li>
         <li><a href="/#produits">Produits</a></li>
         <li><a href="/faq" class="active">FAQ</a></li>
-        <li><a href="https://taap.it/uVo0m3H" target="_blank" class="nav-cta">Devis Gratuit</a></li>
+        <li><a href="https://taap.it/uVo0m3H" target="_blank" rel="noopener" class="nav-cta" aria-label="Devis Gratuit — s'ouvre sur taap.it">Devis Gratuit</a></li>
     </ul>
-    <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+    <button class="hamburger" onclick="toggleNav()" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobNav"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- ═══ HERO ═══ -->
@@ -445,7 +449,10 @@
 
     // Mobile nav
     function toggleNav() {
-        document.getElementById('mobNav').classList.toggle('open');
+        const nav = document.getElementById('mobNav');
+        const btn = document.querySelector('.hamburger');
+        nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', nav.classList.contains('open'));
     }
 
     // Cookies

@@ -27,12 +27,15 @@
         :root {
             --red:#E63946; --red-dark:#B02030;
             --black:#0A0A0A; --black-2:#141414; --black-3:#1E1E1E;
-            --white:#F5F5F5; --white-dim:rgba(245,245,245,.62);
+            --white:#F5F5F5; --white-dim:rgba(245,245,245,.78);
             --glass:rgba(255,255,255,.04); --glass-b:rgba(255,255,255,.09);
         }
         html { scroll-behavior:smooth; }
         body { font-family:'DM Sans',sans-serif; background:var(--black); color:var(--white); overflow-x:hidden; }
         h1,h2,h3 { font-family:'Bebas Neue',sans-serif; letter-spacing:.04em; }
+
+        .skip-link { position:absolute; top:-100%; left:50%; transform:translateX(-50%); background:var(--red); color:var(--white); padding:12px 24px; z-index:10000; border-radius:0 0 4px 4px; font-size:.85rem; text-decoration:none; font-weight:600; }
+        .skip-link:focus { top:0; }
 
         /* ── REVEAL ── */
         .reveal { opacity:0; transform:translateY(28px); transition:opacity .55s ease, transform .55s ease; }
@@ -185,7 +188,7 @@
         .forfait-logo-text { font-family:'Bebas Neue',sans-serif; font-size:1.5rem; color:var(--white); letter-spacing:.08em; opacity:.7; }
         .forfait-card:hover .forfait-logo-text { opacity:1; }
         .forfait-card h3 { font-family:'DM Sans',sans-serif; font-size:.88rem; font-weight:500; color:var(--white-dim); letter-spacing:.05em; text-transform:uppercase; }
-        .forfait-card .sub { color:rgba(245,245,245,.35); font-size:.75rem; font-weight:300; }
+        .forfait-card .sub { color:rgba(245,245,245,.50); font-size:.75rem; font-weight:300; }
 
         /* ── CTA FINAL ── */
         #cta-final { background:var(--red); padding:100px 5%; text-align:center; position:relative; overflow:hidden; }
@@ -197,9 +200,9 @@
 
         /* ── FOOTER ── */
         footer { background:var(--black-2); border-top:1px solid var(--glass-b); padding:2.5rem 5%; text-align:center; }
-        footer p { color:rgba(255,255,255,.28); font-size:.78rem; margin-bottom:1rem; }
+        footer p { color:rgba(255,255,255,.40); font-size:.82rem; margin-bottom:1rem; }
         .footer-links { display:flex; flex-wrap:wrap; justify-content:center; gap:.5rem 1.5rem; }
-        .footer-links a { color:rgba(255,255,255,.35); font-size:.75rem; text-decoration:none; transition:color .2s; }
+        .footer-links a { color:rgba(255,255,255,.50); font-size:.78rem; text-decoration:none; transition:color .2s; }
         .footer-links a:hover { color:var(--white); }
 
         /* ── RESPONSIVE ── */
@@ -268,6 +271,7 @@
     </script>
 </head>
 <body>
+<a href="#hero-maint" class="skip-link">Aller au contenu principal</a>
 
 <!-- MOBILE NAV -->
 <div class="mob-nav" id="mobNav">
@@ -292,9 +296,9 @@
         <li><a href="/maintenance" class="active">Maintenance</a></li>
         <li><a href="/#produits">Produits</a></li>
         <li><a href="/faq">FAQ</a></li>
-        <li><a href="https://taap.it/uVo0m3H" target="_blank" class="nav-cta">Devis Gratuit</a></li>
+        <li><a href="https://taap.it/uVo0m3H" target="_blank" rel="noopener" class="nav-cta" aria-label="Devis Gratuit — s'ouvre sur taap.it">Devis Gratuit</a></li>
     </ul>
-    <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+    <button class="hamburger" onclick="toggleNav()" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobNav"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- ═══ HERO ═══ -->
@@ -534,7 +538,10 @@
 <script>
     // Mobile nav
     function toggleNav() {
-        document.getElementById('mobNav').classList.toggle('open');
+        const nav = document.getElementById('mobNav');
+        const btn = document.querySelector('.hamburger');
+        nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', nav.classList.contains('open'));
     }
 
     // Reveal au scroll
