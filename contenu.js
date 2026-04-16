@@ -130,7 +130,7 @@ const CONTENU = {
       nom:         "Efoil Complet Reconditionné",
       description: "Efoil révisé et reconditionné. Garantie 6 mois. Prix hors transport.",
       prix:        "3 850 €",
-      stock:       false,
+      stock:       true,
       photo:       "images/efoilcruising.jpg",
     },
   ],
