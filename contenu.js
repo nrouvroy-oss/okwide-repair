@@ -89,12 +89,12 @@ const CONTENU = {
       stock:       false,   // ← true = "En stock" | false = "Non disponible"
     },
     {
-      badge:       "Occasion",
-      categorie:   "Propulsion",
-      nom:         "Propulsion Hélice Takuma - Mat 50cm",
-      description: "Occasion révisée - Très bon état. Possible de le passer en mat 65cm.",
-      prix:        "900 €",
-      photo:       "images/propulsion.webp",
+      badge:       "Reconditionné",
+      categorie:   "Matériel reconditionné",
+      nom:         "Efoil CARVER 2 Reconditionné,
+      description: "Efoil révisé et reconditionné. Garantie 6 mois. Prix hors transport.",
+      prix:        "4500 €",
+      photo:       "images/Efoilcarver2.jpeg",
       stock:       true,
     },
     {
@@ -127,7 +127,7 @@ const CONTENU = {
     {
       badge:       "Reconditionné",
       categorie:   "Matériel reconditionné",
-      nom:         "Efoil Complet Reconditionné",
+      nom:         "Efoil Cruising Reconditionné",
       description: "Efoil révisé et reconditionné. Garantie 6 mois. Prix hors transport.",
       prix:        "3 850 €",
       stock:       true,
