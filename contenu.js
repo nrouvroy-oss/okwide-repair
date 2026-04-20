@@ -91,9 +91,9 @@ const CONTENU = {
     {
       badge:       "Reconditionné",
       categorie:   "Matériel reconditionné",
-      nom:         "Efoil CARVER 2 Reconditionné,
+      nom:         "Efoil CARVER 2 Reconditionné",
       description: "Efoil révisé et reconditionné. Garantie 6 mois. Prix hors transport.",
-      prix:        "4500 €",
+      prix:        "4 500 €",
       photo:       "images/Efoilcarver2.jpeg",
       stock:       true,
     },
