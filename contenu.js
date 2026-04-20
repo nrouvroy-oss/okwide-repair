@@ -94,7 +94,7 @@ const CONTENU = {
       nom:         "Efoil CARVER 2 Reconditionné",
       description: "Efoil révisé et reconditionné. Garantie 6 mois. Prix hors transport.",
       prix:        "4 500 €",
-      photo:       "images/Efoilcarver2.jpeg",
+      photo:       "images/efoilcarver2.jpg",
       stock:       true,
     },
     {
