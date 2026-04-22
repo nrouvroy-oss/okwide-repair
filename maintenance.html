@@ -269,6 +269,9 @@
       ]
     }
     </script>
+
+    <!-- ═══ VERCEL WEB ANALYTICS ═══ -->
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 <a href="#hero-maint" class="skip-link">Aller au contenu principal</a>
@@ -311,7 +314,7 @@
             <div class="hero-badge">Maintenance Préventive</div>
             <h1 class="hero-title">Protégez votre<br>investissement</h1>
             <p class="hero-sub">Un efoil représente plusieurs milliers d'euros. Une révision annuelle, c'est la garantie de rider en toute sécurité et de préserver la durée de vie de votre matériel.</p>
-            <a href="https://forms.fillout.com/t/hVAQLjz5AJus" target="_blank" class="btn-primary">
+            <a href="https://forms.fillout.com/t/hVAQLjz5AJus" target="_blank" class="btn-primary" data-track="formulaire_maintenance" data-position="hero">
                 <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><rect x="2" y="4" width="12" height="9" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M2 5l6 4.5L14 5" stroke="currentColor" stroke-width="1.4"/></svg>
                 Demander un devis maintenance
             </a>
@@ -324,7 +327,7 @@
             <div class="price-main">99€</div>
             <div class="price-sub">TTC · Révision complète</div>
             <div class="price-crossed">Au lieu de 150€</div>
-            <a href="https://forms.fillout.com/t/hVAQLjz5AJus" target="_blank" class="btn-primary">
+            <a href="https://forms.fillout.com/t/hVAQLjz5AJus" target="_blank" class="btn-primary" data-track="formulaire_maintenance" data-position="prix">
                 <svg width="14" height="14" fill="none" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
                 Réserver ma révision
             </a>
@@ -497,7 +500,7 @@
 
     </div>
     <div style="text-align:center;" class="reveal" style="transition-delay:.2s">
-        <a href="https://forms.fillout.com/t/hVAQLjz5AJus" target="_blank" class="btn-primary">
+        <a href="https://forms.fillout.com/t/hVAQLjz5AJus" target="_blank" class="btn-primary" data-track="formulaire_maintenance" data-position="materiel">
             <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><rect x="2" y="4" width="12" height="9" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M2 5l6 4.5L14 5" stroke="currentColor" stroke-width="1.4"/></svg>
             Demander un tarif pour mon matériel
         </a>
@@ -508,7 +511,7 @@
 <section id="cta-final">
     <h2 class="reveal">Prêt à faire réviser<br>votre matériel ?</h2>
     <p class="reveal" style="transition-delay:.08s">Répondez en 2 minutes. Nous vous rappelons sous 24h avec un tarif personnalisé.</p>
-    <a href="https://forms.fillout.com/t/hVAQLjz5AJus" target="_blank" class="btn-white reveal" style="transition-delay:.15s">
+    <a href="https://forms.fillout.com/t/hVAQLjz5AJus" target="_blank" class="btn-white reveal" style="transition-delay:.15s" data-track="formulaire_maintenance" data-position="final">
         <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         Demander un devis maintenance
     </a>
@@ -559,6 +562,9 @@
         document.getElementById('cookie-banner').style.display = 'flex';
     }
 </script>
+
+<!-- ═══ TRACKING DES CTA ═══ -->
+<script src="tracking.js" defer></script>
 
 </body>
 </html>
