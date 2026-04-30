@@ -84,7 +84,7 @@ const CONTENU = {
       categorie:   "Batterie",
       nom:         "Batterie Efoil Takuma 35Ah",
       description: "Batterie Li-ion haute performance. Occasion - Garantie 12 mois, BMS intégré.",
-      prix:        "900 €",
+      prix:        "1000 €",
       photo:       "images/batterie.webp",
       stock:       false,   // ← true = "En stock" | false = "Non disponible"
     },
