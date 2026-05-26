@@ -35,6 +35,9 @@
 
   <!-- ═══ VERCEL WEB ANALYTICS ═══ -->
   <script defer src="/_vercel/insights/script.js"></script>
+
+  <!-- ═══ CONSENTEMENT COOKIES + GOOGLE TAG MANAGER ═══ -->
+  <script src="/consent.js" defer></script>
 </head>
 <body>
 
@@ -77,9 +80,14 @@
         </thead>
         <tbody>
           <tr style="border-bottom:1px solid var(--glass-b);">
-            <td style="padding:.75rem 1rem;">okwide_cookies (Okwide)</td>
+            <td style="padding:.75rem 1rem;">okwide_consent (Okwide)</td>
             <td style="padding:.75rem 1rem;">Mémorisation de votre choix de consentement cookies</td>
-            <td style="padding:.75rem 1rem;">1 an</td>
+            <td style="padding:.75rem 1rem;">13 mois</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--glass-b);">
+            <td style="padding:.75rem 1rem;">Google Analytics 4 / Google Tag Manager<br><span style="font-size:.78rem;opacity:.7;">_ga, _ga_*, _gid (soumis à votre consentement)</span></td>
+            <td style="padding:.75rem 1rem;">Mesure d'audience anonymisée : nombre de visiteurs, pages consultées, sources de trafic. Aucune donnée vendue ou utilisée pour de la publicité.</td>
+            <td style="padding:.75rem 1rem;">Jusqu'à 13 mois</td>
           </tr>
           <tr style="border-bottom:1px solid var(--glass-b);">
             <td style="padding:.75rem 1rem;">Fillout (formulaires)</td>
@@ -93,7 +101,7 @@
           </tr>
           <tr>
             <td style="padding:.75rem 1rem;">Tracking publicitaire</td>
-            <td style="padding:.75rem 1rem;">Aucun cookie publicitaire ou de traçage tiers n'est utilisé sur ce site</td>
+            <td style="padding:.75rem 1rem;">Aucun cookie publicitaire ou de remarketing n'est utilisé sur ce site</td>
             <td style="padding:.75rem 1rem;">—</td>
           </tr>
         </tbody>
@@ -122,6 +130,13 @@
     <p style="color:var(--white-dim);line-height:1.8;font-size:.9rem;font-weight:300;margin-top:1rem;">
       Attention : désactiver certains cookies peut altérer le fonctionnement du site (formulaires, paiement).
     </p>
+    <p style="color:var(--white-dim);line-height:1.8;font-size:.9rem;font-weight:300;margin-top:1.25rem;">
+      Vous pouvez également modifier votre choix de consentement à tout moment :
+    </p>
+    <button type="button" onclick="if(window.okwideOuvrirConsentement)okwideOuvrirConsentement();"
+            style="margin-top:.75rem;background:var(--red);color:#fff;border:none;padding:10px 22px;border-radius:2px;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;">
+      Modifier mes préférences cookies
+    </button>
   </section>
 
   <section style="margin-bottom:3rem;padding-top:2rem;border-top:1px solid var(--glass-b);">
@@ -155,19 +170,6 @@
     <a href="/cookies" style="color:rgba(255,255,255,.35);font-size:.75rem;text-decoration:none;">Cookies</a>
   </div>
 </footer>
-
-<!-- BANDEAU COOKIES -->
-<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--black-2);border-top:2px solid var(--red);padding:1.25rem 5%;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
-  <p style="color:var(--white-dim);font-size:.84rem;line-height:1.6;max-width:780px;margin:0;">
-    Nous utilisons des cookies techniques nécessaires au fonctionnement du site et au paiement sécurisé. Pas de tracking publicitaire.
-    <a href="/cookies" style="color:var(--red);text-decoration:none;margin-left:.5rem;">En savoir plus</a>
-  </p>
-  <button onclick="acceptCookies()" style="background:var(--red);color:#fff;border:none;padding:10px 24px;border-radius:2px;font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;white-space:nowrap;flex-shrink:0;">Accepter</button>
-</div>
-<script>
-  function acceptCookies(){localStorage.setItem('okwide_cookies','1');document.getElementById('cookie-banner').style.display='none';}
-  if(!localStorage.getItem('okwide_cookies')){document.getElementById('cookie-banner').style.display='flex';}
-</script>
 
 </body>
 </html>
