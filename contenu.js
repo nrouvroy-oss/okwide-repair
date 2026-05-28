@@ -83,10 +83,10 @@ const CONTENU = {
       badge:       "Occasion",
       categorie:   "Batterie",
       nom:         "Batterie Efoil Takuma 35Ah",
-      description: "Batterie Li-ion haute performance. Occasion - Garantie 12 mois, BMS intégré.",
+      description: "Batterie Li-ion haute performance. Occasion - Garantie 12 mois.",
       prix:        "1000 €",
       photo:       "images/batterie.webp",
-      stock:       false,   // ← true = "En stock" | false = "Non disponible"
+      stock:       true,   // ← true = "En stock" | false = "Non disponible"
     },
     {
       badge:       "Reconditionné",
@@ -113,7 +113,7 @@ const CONTENU = {
       description: "Pack complet neuf: Télécommande + chargeur.",
       prix:        "299 €",
       photo:       "images/Télécommande.webp",
-      stock:       false,
+      stock:       true,
     },
     {
       badge:       "Top vente",
@@ -122,7 +122,7 @@ const CONTENU = {
       description: "Télécommande seule neuve.",
       prix:        "250 €",
       photo:       "images/remoteonly.webp",
-      stock:       false,
+      stock:       true,
     },
     {
       badge:       "Reconditionné",
