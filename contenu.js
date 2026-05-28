@@ -149,7 +149,7 @@ const CONTENU = {
     lien:         "https://forms.fillout.com/t/hVAQLjz5AJus",
     // Les conditions affichées sous le prix :
     conditions: [
-      "Valable jusqu'au 30 avril",
+      "Valable jusqu'au 30 juin",
       "Tous Efoils & engins nautiques électriques",
       "Pièces facturées en supplément si nécessaire",
       "A partir de 99€ selon la marque du matériel",
