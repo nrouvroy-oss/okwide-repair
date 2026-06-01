@@ -146,7 +146,7 @@ const CONTENU = {
     sous_titre:   "TTC · Révision complète",
     bouton:       "Réserver ma révision",
     // 🔗 Lien du formulaire de réservation :
-    lien:         "https://forms.fillout.com/t/hVAQLjz5AJus",
+    lien:         "https://forms.fillout.com/t/n1S5rSKTS4us",
     // Les conditions affichées sous le prix :
     conditions: [
       "Valable jusqu'au 30 juin",
