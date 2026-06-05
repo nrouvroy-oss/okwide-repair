@@ -133,6 +133,15 @@ const CONTENU = {
       stock:       true,
       photo:       "images/efoilcruising.jpg",
     },
+    {
+      badge:       "Neuf",
+      categorie:   "Matériel neuf",
+      nom:         "Efoil Sifly Rider",
+      description: "Efoil polyvalent. Mousse polypropylène expansée (EPP Foam) / 110L ou 130L. Ecole et débutant. Prix hors transport.",
+      prix:        "7 318 €",
+      stock:       true,
+      photo:       "images/efoilcruising.jpg",
+    },
   ],
 
   // ══════════════════════════════════════════════════════
