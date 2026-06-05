@@ -140,7 +140,7 @@ const CONTENU = {
       description: "Efoil polyvalent. Mousse polypropylène expansée (EPP Foam) / 110L ou 130L. Ecole et débutant. Prix hors transport.",
       prix:        "7 318 €",
       stock:       true,
-      photo:       "images/efoilcruising.jpg",
+      photo:       "images/sifly-rider.jpg",
     },
   ],
 
